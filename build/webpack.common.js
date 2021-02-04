@@ -7,8 +7,6 @@ module.exports = {
     "examples": '../examples/main.ts'
   },
 
-  
-
   output: {
     filename: '[name].[content].js',
     path: path.resolve(__dirname, 'dist'),
@@ -21,9 +19,6 @@ module.exports = {
 
   optimization: {
     runtimeChunk: 'single',
-    // splitChunks: {
-    //   chunks: 'all'
-    // }
     splitChunks: {
       cacheGroups: {
         vendor: {
